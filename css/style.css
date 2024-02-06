@@ -1,21 +1,93 @@
-#gameWindow ()
+* {
+    border: 1px []#000000;
+}
 
-#inventoryBox ()
+body {
+    display: grid;
+    grid-template-columns: auto 800px auto;
+    grid-template-rows: auto 800px auto;
+}
 
-#dialogBar ()
+#title {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
 
-#setMainDialog ()
+#gameWindow {
+    width: 800px;
+    height: 600px;
+    background-color: rgb(0, 68, 178);
+    grid-column-start: 2;
+    grid-row-start: 2;
+    position: relative;
+}
 
-#heroAvatar ()
+#inventoryBox {
+    width: 100px;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    top: 10px;
+    left: 10px;
+}
 
-#heroSpeach ()
+#dialogBar {
+    bottom: 0px;
+}
 
-#counterSpeach ()
+#setMainDialog {
+    position: relative;
+    width: 800px;
+    height: 64px;
+    background-color: rgb(255, 255, 255);
+}
 
-#counterCharacter ()
+#heroAvatar {
+    width: 32px;
+    height: 64px;
+    background-color: rgb(255, 166, 0);
+}
 
-#squareTree ()
+#heroSpeach {
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+}
 
-#hero ()
+#counterSpeach {
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+}
 
-#tileMap ()
+#counterCharacter {
+    width: 32px;
+    height: 64px;
+    background-color: rgb(255, 0, 0);
+}
+
+#squareTree {
+    width: 64px;
+    height: 64px;
+    background-color: rgb(0, 129, 0);
+}
+
+#hero {
+    width: 32px;
+    height: 32px;
+    background-color: pink;
+}
+
+#tileMap {
+
+}
+
+.background{
+    position: absolute;
+    z-index: 0;
+}
+.character{
+    position: absolute;
+    z-index: 100;
+}
+.Foreground{
+    position: absolute;
+    z-index: 1000;
+}
