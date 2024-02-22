@@ -21,7 +21,7 @@ body {
 #inventoryBox {
     width: 180px;
     height: 80px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     top: 10px;
     left: 10px;
 }
@@ -84,9 +84,11 @@ body {
 }
 
 #hero {
+    top: 0px;
+    left: 0px;
     width: 32px;
     height: 32px;
-    background-color: pink;
+    transition: all 1s ease-in-out;
 }
 
 #tileMap {
